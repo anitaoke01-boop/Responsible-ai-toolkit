@@ -1,0 +1,18 @@
+id: draft-email
+title: "Draft a workplace email"
+task_category: writing
+prompt_text: |
+  Draft an email to [role, not a real name] about [topic]. Goal: [goal]. Tone: [tone]. Include only these approved facts: [synthetic or approved facts]. Do not invent dates, commitments, or policy. Mark details the sender must fill in using [brackets].
+expected_answer: >-
+  A clear subject and concise message that meets the goal, uses only supplied facts, and marks missing details.
+known_failure_cases:
+  - "Invented commitment; wrong tone; disclosure of unnecessary information; missing call to action."
+verification_steps:
+  - "Check every factual statement and commitment; confirm recipient and tone; replace placeholders; review privacy and policy."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

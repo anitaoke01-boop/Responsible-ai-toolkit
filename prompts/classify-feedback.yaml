@@ -1,0 +1,18 @@
+id: classify-feedback
+title: "Classify feedback themes"
+task_category: classification
+prompt_text: |
+  Classify each supplied synthetic feedback comment into up to [number] themes. Include the exact comment ID and a short evidence phrase. Allow multiple themes and “unclear”; do not infer a person’s identity or intent.
+expected_answer: >-
+  Consistent theme labels linked to source IDs and evidence; ambiguous cases marked unclear.
+known_failure_cases:
+  - "Overgeneralizing from few comments; inventing sentiment; inconsistent labels; deanonymizing."
+verification_steps:
+  - "Check all items and labels; compare ambiguous examples; ensure no identity inference; report sample size."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

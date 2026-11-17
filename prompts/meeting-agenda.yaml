@@ -1,0 +1,18 @@
+id: meeting-agenda
+title: "Draft a meeting agenda"
+task_category: planning
+prompt_text: |
+  Create a [duration]-minute agenda for [purpose] using only these supplied topics and constraints. Allocate time that sums to the duration. Mark any missing facilitator or decision owner as a placeholder.
+expected_answer: >-
+  Timed agenda whose segments sum correctly and cover supplied topics.
+known_failure_cases:
+  - "Time totals do not add up; invented attendees or decisions; unrealistic allocation."
+verification_steps:
+  - "Recalculate total time; check topics and constraints; confirm owners and decisions with organizer."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

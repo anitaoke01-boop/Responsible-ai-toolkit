@@ -1,0 +1,18 @@
+id: risk-brainstorm
+title: "Brainstorm project risks"
+task_category: risk-analysis
+prompt_text: |
+  Given this synthetic project description, list possible risks, causes, early indicators, and practical mitigations. Label these as hypotheses to review, not established facts. Include missing information that would change the assessment.
+expected_answer: >-
+  A structured brainstorm with uncertainty labels and actionable checks, without asserting unprovided facts.
+known_failure_cases:
+  - "Generic risks; presenting speculation as fact; overlooking affected groups; false completeness."
+verification_steps:
+  - "Ask project owner and affected stakeholders; check controls and context; do not treat list as exhaustive."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

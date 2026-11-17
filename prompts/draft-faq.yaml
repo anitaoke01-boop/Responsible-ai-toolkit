@@ -1,0 +1,18 @@
+id: draft-faq
+title: "Draft an FAQ from source material"
+task_category: content-generation
+prompt_text: |
+  Using only the supplied source text, draft up to [number] questions and answers for [audience]. Each answer must include a source heading reference. If the source does not answer a likely question, label it “Not answered in source.”
+expected_answer: >-
+  Useful questions, accurate answers, source references, and transparent gaps.
+known_failure_cases:
+  - "Invented policy; false certainty; missing edge cases; unsupported answer."
+verification_steps:
+  - "Open every cited section; verify scope and exceptions; ensure unanswered questions are labeled."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

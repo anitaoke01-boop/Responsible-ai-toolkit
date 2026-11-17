@@ -1,0 +1,18 @@
+id: formula-review
+title: "Explain a spreadsheet formula"
+task_category: spreadsheet-review
+prompt_text: |
+  Explain what this supplied spreadsheet formula appears to do, using the synthetic column descriptions provided. Identify assumptions and possible edge cases. Do not claim to have executed the formula.
+expected_answer: >-
+  Plain explanation, assumptions, and relevant edge cases without implying execution.
+known_failure_cases:
+  - "Misreading cell references; missing blanks/errors; claiming output values without running it."
+verification_steps:
+  - "Inspect referenced cells and ranges; test with synthetic cases in a copy; confirm intended business rule."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

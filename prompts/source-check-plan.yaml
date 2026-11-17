@@ -1,0 +1,18 @@
+id: source-check-plan
+title: "Plan verification of claims"
+task_category: research-planning
+prompt_text: |
+  For each claim in the supplied draft, identify what evidence would verify it and the best kind of source to consult. Do not invent sources, links, or findings. Mark time-sensitive claims for a current check.
+expected_answer: >-
+  Claim-by-claim verification plan with source type and clear check criteria.
+known_failure_cases:
+  - "Fabricated citation; weak source type; failure to identify changing information."
+verification_steps:
+  - "Locate sources independently; check authority, date, and direct support; record result and access date."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

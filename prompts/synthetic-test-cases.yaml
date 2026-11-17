@@ -1,0 +1,18 @@
+id: synthetic-test-cases
+title: "Create synthetic test cases"
+task_category: testing
+prompt_text: |
+  Create [number] clearly synthetic test cases for [workflow]. Include input, expected behavior, and edge case. Use fictional labels and values; do not use real personal or confidential information.
+expected_answer: >-
+  Distinct, labeled test cases including ordinary, boundary, and failure inputs with expected behavior.
+known_failure_cases:
+  - "Accidental real data; expected result contradicts specification; insufficient edge cases."
+verification_steps:
+  - "Scan for personal details; compare expectations with requirements; have workflow owner approve cases."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

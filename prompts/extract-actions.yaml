@@ -1,0 +1,18 @@
+id: extract-actions
+title: "Extract action items"
+task_category: information-extraction
+prompt_text: |
+  From the supplied meeting notes, list action items with task, owner if explicitly named, due date if explicitly stated, and source phrase. Use “not stated” for missing owner or date. Do not infer assignments.
+expected_answer: >-
+  A table of traceable action items with no invented owners or deadlines.
+known_failure_cases:
+  - "Treating discussion as a decision; inferring an owner; misreading tentative dates."
+verification_steps:
+  - "Compare each row with notes; ensure tentative ideas are not stated as commitments; verify names/dates."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

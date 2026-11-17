@@ -1,0 +1,18 @@
+id: decision-memo-outline
+title: "Outline a decision memo"
+task_category: decision-support
+prompt_text: |
+  Create an outline for a decision memo from the supplied evidence and options. Separate facts, assumptions, trade-offs, unknowns, and recommendation. Do not choose an option unless asked; identify evidence gaps.
+expected_answer: >-
+  A balanced, traceable outline that distinguishes evidence from assumptions and leaves unsupported choices open.
+known_failure_cases:
+  - "Conflating recommendation with fact; omitting downside; overstating evidence; inventing criteria."
+verification_steps:
+  - "Verify evidence and criteria; solicit affected perspectives; confirm authority and decision owner; review uncertainty."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

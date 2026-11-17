@@ -1,0 +1,18 @@
+id: rewrite-plain-language
+title: "Rewrite in plain language"
+task_category: editing
+prompt_text: |
+  Rewrite the supplied text for a general professional audience. Preserve meaning, qualifications, numbers, and defined terms. Do not add claims. After the rewrite, list any phrases whose meaning was unclear.
+expected_answer: >-
+  Readable rewrite that preserves each material meaning, qualifier, and number, with ambiguities surfaced.
+known_failure_cases:
+  - "Changing obligation or certainty; dropping exceptions; mistranslating technical term."
+verification_steps:
+  - "Compare original and rewrite sentence by sentence; verify numbers, terms, and modal verbs; obtain subject review."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

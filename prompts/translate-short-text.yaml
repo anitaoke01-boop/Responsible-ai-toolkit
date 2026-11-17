@@ -1,0 +1,18 @@
+id: translate-short-text
+title: "Translate short workplace text"
+task_category: translation
+prompt_text: |
+  Translate the supplied text into [language]. Preserve names, numbers, dates, tone, and uncertainty. Do not add explanation. Flag any phrase with multiple plausible meanings and provide alternatives separately.
+expected_answer: >-
+  Faithful translation with preserved details and ambiguity flags.
+known_failure_cases:
+  - "Changed date/number; idiom translated literally; stronger or weaker obligation; omitted ambiguity."
+verification_steps:
+  - "Have a fluent human review; compare all numbers/names; check specialized terminology and tone."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

@@ -1,0 +1,18 @@
+id: summarize-document
+title: "Summarize a document"
+task_category: summarization
+prompt_text: |
+  Summarize the supplied document for [audience] in [length]. Use only information in the document. Separate key points, decisions, open questions, and any dates or figures. Cite section headings or page markers when provided. Mark missing information as not stated.
+expected_answer: >-
+  A concise, source-faithful summary with the requested audience and length; separate categories; traceable references; explicit omissions.
+known_failure_cases:
+  - "Invented facts; omitted caveats; confusion between proposal and decision; incorrect dates or figures."
+verification_steps:
+  - "Compare each claim with the document; verify figures and dates; confirm no outside facts were added; check audience and length."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

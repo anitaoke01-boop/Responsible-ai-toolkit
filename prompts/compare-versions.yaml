@@ -1,0 +1,18 @@
+id: compare-versions
+title: "Compare two document versions"
+task_category: comparison
+prompt_text: |
+  Compare Version A and Version B below. List additions, removals, and meaning changes with section or line references. Quote only short identifying phrases. Do not assume a change is intentional or explain motives.
+expected_answer: >-
+  A neutral, traceable change list distinguishing textual edits from possible meaning changes.
+known_failure_cases:
+  - "Missing a change; calling formatting a substantive change; inferring motive."
+verification_steps:
+  - "Check the source locations; verify each item against both versions; inspect tables and footnotes separately."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested

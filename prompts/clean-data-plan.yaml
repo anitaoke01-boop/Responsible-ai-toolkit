@@ -1,0 +1,18 @@
+id: clean-data-plan
+title: "Create a data-cleaning plan"
+task_category: data-quality
+prompt_text: |
+  Review this synthetic data sample and propose a cleaning plan. Identify suspected duplicates, inconsistent formats, missing values, and validation rules. Do not alter records or guess missing values. Show example transformations separately.
+expected_answer: >-
+  A reversible plan that identifies issues, preserves originals, and gives explicit validation rules.
+known_failure_cases:
+  - "Deleting valid records; filling values by guess; treating similar names as duplicates."
+verification_steps:
+  - "Check proposed rules against data definitions; review sample rows; preserve raw copy; confirm transformations with owner."
+test_conditions:
+  tool: not_run
+  model_version: not_run
+  date: "2026-11-17 (record created; no test run)"
+  settings: not_run
+  number_of_runs: 0
+test_status: not_tested
